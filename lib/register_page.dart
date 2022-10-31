@@ -12,6 +12,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   late bool showvalue = false;
   late bool value;
+  late String _selectedGender = 'male';
 
   policyIsAgree(){
     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
@@ -107,6 +108,42 @@ class _RegisterPageState extends State<RegisterPage> {
                             ),
                           ),
                         ),
+                      ),
+                    ),
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Container(
+                      margin: EdgeInsets.only(left: 500),
+                      child: ListTile(
+                        leading: Radio<String>(
+                          value: 'male',
+                          groupValue: _selectedGender,
+                          onChanged: (value) {
+                            setState(() {
+                              _selectedGender = value!;
+                            });
+                          },
+                        ),
+                        title: const Text('Male'),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(left: 500),
+                      child: ListTile(
+                        leading: Radio<String>(
+                          value: 'female',
+                          groupValue: _selectedGender,
+                          onChanged: (value) {
+                            setState(() {
+                              _selectedGender = value!;
+                            });
+                          },
+                        ),
+                        title: const Text('Female'),
                       ),
                     ),
                   ],
