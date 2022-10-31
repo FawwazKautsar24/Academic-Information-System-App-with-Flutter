@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_shopping_mall_app_with_flutter/account_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -151,7 +152,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   onPressed: () {
                     Navigator.push(context, MaterialPageRoute(builder: (context) {
-                      return AccountPage();
+                      return RegisterPage();
                     },));
                   },
                 ),
