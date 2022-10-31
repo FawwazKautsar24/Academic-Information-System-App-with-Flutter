@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:simple_shopping_mall_app_with_flutter/account_page.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    TextEditingController emailController = new TextEditingController();
+  State<LoginPage> createState() => _LoginPageState();
+}
 
+class _LoginPageState extends State<LoginPage> {
+
+  bool _validateIsNull = false;  
+  final _emailController = TextEditingController();
+  
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -44,7 +51,7 @@ class LoginPage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 15,
               ),),
-              Text(' MAL SKA ', 
+              Text(' SKA MAL ', 
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.bold
@@ -73,10 +80,11 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 width: 350,
                 child: TextField(
-                  controller: emailController,
+                  controller: _emailController,
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
                     hintText: 'Masukan Email Anda . . .',
+                    errorText: _validateIsNull ? 'Value Can\'t Be Empty' : null,
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(width: 3, color: Colors.black26),
                       borderRadius: BorderRadius.circular(10),
@@ -113,9 +121,14 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   onPressed: () {
-                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                      return AccountPage();
-                    },));
+                    setState(() {
+                      _emailController.text.isEmpty ? _validateIsNull = true : _validateIsNull = false;
+                    });
+                    if(_validateIsNull == false){
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                        return AccountPage();
+                      },));
+                    }
                   },
                 ),
               ),
