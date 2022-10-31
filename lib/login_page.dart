@@ -85,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
                   keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
                     hintText: 'Masukan Email Anda . . .',
-                    errorText: _validateIsNull ? 'Value Can\'t Be Empty' : null,
+                    errorText: _validateIsNull ? 'Email Can\'t be Empty!' : null,
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(width: 3, color: Colors.black26),
                       borderRadius: BorderRadius.circular(10),
