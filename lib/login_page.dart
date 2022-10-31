@@ -7,15 +7,36 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ElevatedButton(
-          child: Text('Login'),
-          onPressed: () {
-            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-              return AccountPage();
-            },));
-          },
-        )
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                width: 250,
+                margin: EdgeInsets.all(10),
+                child: Image(
+                  image: AssetImage('logo-app-main.png'),
+                )
+              ),
+            ]
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              ElevatedButton(
+                child: Text('Login'),
+                onPressed: () {
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                    return AccountPage();
+                  },));
+                },
+              )
+            ]
+          )
+        ],
       ),
     );
   }
