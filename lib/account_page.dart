@@ -65,7 +65,7 @@ class _AccountPageState extends State<AccountPage> {
                     width: 10,
                     child: Icon(
                       Icons.language, 
-                      size: 35
+                      size: 28
                     ),
                   ),
                   Spacer(flex: 2,),
@@ -77,7 +77,7 @@ class _AccountPageState extends State<AccountPage> {
                   Container(
                     child: Icon(
                       Icons.chevron_right, 
-                      size: 35
+                      size: 28
                     ),
                   ),
                   Spacer(flex: 3,)
@@ -91,7 +91,7 @@ class _AccountPageState extends State<AccountPage> {
                     width: 10,
                     child: Icon(
                       Icons.corporate_fare, 
-                      size: 35
+                      size: 28
                     ),
                   ),
                   Spacer(flex: 2,),
@@ -103,7 +103,7 @@ class _AccountPageState extends State<AccountPage> {
                   Container(
                     child: Icon(
                       Icons.chevron_right, 
-                      size: 35
+                      size: 28
                     ),
                   ),
                   Spacer(flex: 3,)
@@ -117,7 +117,7 @@ class _AccountPageState extends State<AccountPage> {
                     width: 10,
                     child: Icon(
                       Icons.star_border_purple500, 
-                      size: 35
+                      size: 28
                     ),
                   ),
                   Spacer(flex: 2,),
@@ -129,7 +129,7 @@ class _AccountPageState extends State<AccountPage> {
                   Container(
                     child: Icon(
                       Icons.chevron_right, 
-                      size: 35
+                      size: 28
                     ),
                   ),
                   Spacer(flex: 3,)
@@ -142,13 +142,13 @@ class _AccountPageState extends State<AccountPage> {
                   Container(
                     width: 10,
                     child: Icon(
-                      Icons.shopify, 
-                      size: 35
+                      Icons.info, 
+                      size: 28
                     ),
                   ),
                   Spacer(flex: 2,),
                   Container(
-                    width: 140,
+                    width: 130,
                     child: Text('Tentang Aplikasi')
                   ),
                   Spacer(flex: 5,),
@@ -169,7 +169,7 @@ class _AccountPageState extends State<AccountPage> {
                     width: 10,
                     child: Icon(
                       Icons.exit_to_app, 
-                      size: 35
+                      size: 28
                     ),
                   ),
                   Spacer(flex: 2,),
@@ -181,7 +181,7 @@ class _AccountPageState extends State<AccountPage> {
                   Container(
                     child: Icon(
                       Icons.chevron_right, 
-                      size: 35
+                      size: 28
                     ),
                   ),
                   Spacer(flex: 3,)
@@ -190,6 +190,41 @@ class _AccountPageState extends State<AccountPage> {
             ],
           ),
         ),
+      bottomNavigationBar: new BottomNavigationBar(
+        unselectedItemColor: Colors.black38,
+        selectedItemColor: Colors.red.shade900,
+        currentIndex: 3,
+        items: [
+          new BottomNavigationBarItem(
+            icon: Icon(
+              Icons.shopify,
+              size: 35,
+            ),
+            label: "Beranda",
+          ),
+          new BottomNavigationBarItem(
+            icon: Icon(
+              Icons.notifications,
+              size: 35,
+            ),
+            label: "Notifikasi",
+          ),
+          new BottomNavigationBarItem(
+            icon: Icon(
+              Icons.shopping_cart,
+              size: 35,
+            ),
+            label: "Berita",
+          ),
+          new BottomNavigationBarItem(
+            icon: Icon(
+              Icons.account_circle,
+              size: 35,
+            ),
+            label: "Akun",
+          ),
+        ],
+      ),
     );
   }
 }
