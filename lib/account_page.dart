@@ -9,6 +9,9 @@ class AccountPage extends StatefulWidget {
 }
 
 class _AccountPageState extends State<AccountPage> {
+
+  late String _selectedLanguage = 'ID';
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,16 +40,156 @@ class _AccountPageState extends State<AccountPage> {
           ),
         ],
       ),
-      body: Center(
-        child: ElevatedButton(
-          child: Text('Go to Edit Profile Page'),
-          onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return AccountEditPagePage();
-            },));
-          },
-        )
-      ),
+      // body: Center(
+      //   child: ElevatedButton(
+      //     child: Text('Go to Edit Profile Page'),
+      //     onPressed: () {
+      //       Navigator.push(context, MaterialPageRoute(builder: (context) {
+      //         return AccountEditPagePage();
+      //       },));
+      //     },
+      //   )
+      // ),
+      body: Container(
+          margin: EdgeInsets.all(10),
+          child: ListView(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(top: 30),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Spacer(flex: 3,),
+                  Container(
+                    width: 10,
+                    child: Icon(
+                      Icons.language, 
+                      size: 35
+                    ),
+                  ),
+                  Spacer(flex: 2,),
+                  Container(
+                    width: 150,
+                    child: Text('Bahasa'),
+                  ),
+                  Spacer(flex: 5,),
+                  Container(
+                    child: Icon(
+                      Icons.chevron_right, 
+                      size: 35
+                    ),
+                  ),
+                  Spacer(flex: 3,)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Spacer(flex: 3,),
+                  Container(
+                    width: 10,
+                    child: Icon(
+                      Icons.corporate_fare, 
+                      size: 35
+                    ),
+                  ),
+                  Spacer(flex: 2,),
+                  Container(
+                    width: 150,
+                    child: Text('Tentang Kami'),
+                  ),
+                  Spacer(flex: 5,),
+                  Container(
+                    child: Icon(
+                      Icons.chevron_right, 
+                      size: 35
+                    ),
+                  ),
+                  Spacer(flex: 3,)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Spacer(flex: 3,),
+                  Container(
+                    width: 10,
+                    child: Icon(
+                      Icons.star_border_purple500, 
+                      size: 35
+                    ),
+                  ),
+                  Spacer(flex: 2,),
+                  Container(
+                    width: 150,
+                    child: Text('Nilai Kami')
+                  ),
+                  Spacer(flex: 5,),
+                  Container(
+                    child: Icon(
+                      Icons.chevron_right, 
+                      size: 35
+                    ),
+                  ),
+                  Spacer(flex: 3,)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Spacer(flex: 3,),
+                  Container(
+                    width: 10,
+                    child: Icon(
+                      Icons.shopify, 
+                      size: 35
+                    ),
+                  ),
+                  Spacer(flex: 2,),
+                  Container(
+                    width: 140,
+                    child: Text('Tentang Aplikasi')
+                  ),
+                  Spacer(flex: 5,),
+                  Container(
+                    child: Text('v2.1.3-d')
+                  ),
+                  Spacer(flex: 3,)
+                ],
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 50),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Spacer(flex: 3,),
+                  Container(
+                    width: 10,
+                    child: Icon(
+                      Icons.exit_to_app, 
+                      size: 35
+                    ),
+                  ),
+                  Spacer(flex: 2,),
+                  Container(
+                    width: 150,
+                    child: Text('Keluar')
+                  ),
+                  Spacer(flex: 5,),
+                  Container(
+                    child: Icon(
+                      Icons.chevron_right, 
+                      size: 35
+                    ),
+                  ),
+                  Spacer(flex: 3,)
+                ],
+              ),
+            ],
+          ),
+        ),
     );
   }
 }

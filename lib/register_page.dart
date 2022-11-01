@@ -194,7 +194,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   children: <Widget>[
                     // Spacer(flex: 10,),
                     Container(
-                      margin: EdgeInsets.only(top: 20),
+                      margin: EdgeInsets.only(top: 20, right: 60),
                       child: Text('Tempat Lahir :', 
                         style: TextStyle(
                           fontSize: 20,
@@ -203,7 +203,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                     // Spacer(flex: 2,),
                     Container(
-                      margin: EdgeInsets.only(top: 20),
+                      margin: EdgeInsets.only(top: 20, left: 60),
                       child: Text('Tanggal Lahir :', 
                         style: TextStyle(
                           fontSize: 20,
