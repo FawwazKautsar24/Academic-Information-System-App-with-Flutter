@@ -36,9 +36,16 @@ class _AccountPageState extends State<AccountPage> {
         actions: [
           Container(
             margin: EdgeInsets.only(right: 50),
-            child: Icon(
-              Icons.edit_note, 
-              size: 35
+            child: IconButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return AccountEditProfilePage();
+                },));
+              },
+              icon: Icon(
+                Icons.edit_note, 
+                size: 35
+              ),
             ),
           ),
         ],
