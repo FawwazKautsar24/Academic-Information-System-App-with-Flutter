@@ -23,6 +23,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Create new Account',
       home: Scaffold(
         appBar: AppBar(
           title: Text('Register'),
@@ -337,16 +338,17 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
                 // Spacer(flex: 2),
                 Container(
-                margin: EdgeInsets.all(20),
+                margin: EdgeInsets.only(top: 20, bottom: 45),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.red.shade900, //background color of button
-                      side: BorderSide(width:3, color:Colors.red.shade900), //border width and color
-                      elevation: 3, //elevation of button
-                      shape: RoundedRectangleBorder( //to set border radius to button
-                                borderRadius: BorderRadius.circular(20)
-                            ),
-                        padding: EdgeInsets.fromLTRB(30, 20, 30, 20) //content padding inside button
+                    backgroundColor: Colors.red.shade900, //background color of button
+                    side: BorderSide(width:3, color:Colors.red.shade900), //border width and color
+                    elevation: 3, //elevation of button
+                    fixedSize: Size(450, 40),
+                    shape: RoundedRectangleBorder( //to set border radius to button
+                      borderRadius: BorderRadius.circular(10)
+                    ),
+                    padding: EdgeInsets.fromLTRB(30, 20, 30, 20) //content padding inside button
                   ),
                   child: Text('Proses', 
                     style: TextStyle(
