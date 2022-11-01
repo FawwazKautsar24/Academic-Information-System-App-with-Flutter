@@ -34,9 +34,12 @@ class _AccountPageState extends State<AccountPage> {
         backgroundColor: Colors.red.shade900,
         toolbarHeight: 120,
         actions: [
-          Icon(
-            Icons.edit_note, 
-            size: 35
+          Container(
+            margin: EdgeInsets.only(right: 50),
+            child: Icon(
+              Icons.edit_note, 
+              size: 35
+            ),
           ),
         ],
       ),
@@ -71,7 +74,12 @@ class _AccountPageState extends State<AccountPage> {
                   Spacer(flex: 2,),
                   Container(
                     width: 150,
-                    child: Text('Bahasa'),
+                    child: Text('Bahasa', 
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold
+                      )
+                    ),
                   ),
                   Spacer(flex: 5,),
                   Container(
@@ -97,7 +105,12 @@ class _AccountPageState extends State<AccountPage> {
                   Spacer(flex: 2,),
                   Container(
                     width: 150,
-                    child: Text('Tentang Kami'),
+                    child: Text('Tentang Kami', 
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold
+                      )
+                    ),
                   ),
                   Spacer(flex: 5,),
                   Container(
@@ -123,7 +136,12 @@ class _AccountPageState extends State<AccountPage> {
                   Spacer(flex: 2,),
                   Container(
                     width: 150,
-                    child: Text('Nilai Kami')
+                    child: Text('Nilai Kami', 
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold
+                      )
+                    )
                   ),
                   Spacer(flex: 5,),
                   Container(
@@ -148,8 +166,13 @@ class _AccountPageState extends State<AccountPage> {
                   ),
                   Spacer(flex: 2,),
                   Container(
-                    width: 130,
-                    child: Text('Tentang Aplikasi')
+                    width: 128,
+                    child: Text('Tentang Aplikasi', 
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold
+                      )
+                    )
                   ),
                   Spacer(flex: 5,),
                   Container(
@@ -175,7 +198,12 @@ class _AccountPageState extends State<AccountPage> {
                   Spacer(flex: 2,),
                   Container(
                     width: 150,
-                    child: Text('Keluar')
+                    child: Text('Keluar', 
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold
+                      )
+                    )
                   ),
                   Spacer(flex: 5,),
                   Container(
@@ -191,6 +219,7 @@ class _AccountPageState extends State<AccountPage> {
           ),
         ),
       bottomNavigationBar: new BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         unselectedItemColor: Colors.black38,
         selectedItemColor: Colors.red.shade900,
         currentIndex: 3,
