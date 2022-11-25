@@ -330,7 +330,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     Container(
                       margin: EdgeInsets.only(top: 20),
                       child: Text(
-                        'setuju dengan Persyaratan Layanan dan Kebijakan probadi',
+                        'setuju dengan Persyaratan Layanan dan Kebijakan pribadi',
                         style: TextStyle(fontSize: 17),
                       ),
                     ),

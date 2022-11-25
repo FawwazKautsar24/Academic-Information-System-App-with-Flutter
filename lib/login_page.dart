@@ -26,10 +26,10 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
-                width: 250,
+                width: 120,
                 // margin: EdgeInsets.all(10),
                 child: Image(
-                  image: AssetImage('logo-app-main.png'),
+                  image: AssetImage('logo-upi.png'),
                 )
               ),
             ]
@@ -52,12 +52,12 @@ class _LoginPageState extends State<LoginPage> {
               style: TextStyle(
                 fontSize: 15,
               ),),
-              Text(' SKA MAL ', 
+              Text(' Kalani ', 
               style: TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.bold
               ),),
-              Text('Membership', 
+              Text('Informasi Data Alumni', 
               style: TextStyle(
                 fontSize: 15,
               ),),
@@ -163,7 +163,7 @@ class _LoginPageState extends State<LoginPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text('SKA MALL Mobile - 2022', 
+              Text('Kalani App - 2022', 
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.bold

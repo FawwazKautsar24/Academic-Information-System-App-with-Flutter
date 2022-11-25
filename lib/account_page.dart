@@ -231,32 +231,25 @@ class _AccountPageState extends State<AccountPage> {
           type: BottomNavigationBarType.fixed,
           unselectedItemColor: Colors.black38,
           selectedItemColor: Colors.red.shade900,
-          currentIndex: 3,
+          currentIndex: 2,
           items: [
             new BottomNavigationBarItem(
               icon: Icon(
-                Icons.shopify,
+                Icons.home,
                 size: 35,
               ),
               label: "Beranda",
             ),
             new BottomNavigationBarItem(
               icon: Icon(
-                Icons.notifications,
+                Icons.perm_contact_calendar,
                 size: 35,
               ),
-              label: "Notifikasi",
+              label: "Kontak",
             ),
             new BottomNavigationBarItem(
               icon: Icon(
-                Icons.shopping_cart,
-                size: 35,
-              ),
-              label: "Berita",
-            ),
-            new BottomNavigationBarItem(
-              icon: Icon(
-                Icons.account_circle,
+                Icons.settings,
                 size: 35,
               ),
               label: "Akun",
