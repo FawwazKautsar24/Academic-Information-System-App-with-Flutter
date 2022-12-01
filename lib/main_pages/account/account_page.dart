@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_shopping_mall_app_with_flutter/account_editProfile_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/account/account_editProfile_page.dart';
 
 class AccountPage extends StatefulWidget {
   const AccountPage({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_shopping_mall_app_with_flutter/account_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/account/account_page.dart';
 import 'package:simple_shopping_mall_app_with_flutter/register_page.dart';
 
 class LoginPage extends StatefulWidget {
