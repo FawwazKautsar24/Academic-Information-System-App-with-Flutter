@@ -66,6 +66,12 @@ flutter:
   assets: 
     - assets/no-profile.png
     - assets/logo-upi.png
+    - assets/university/upi-bumsil.jpg
+    - assets/university/upi-cibiru.jpg
+    - assets/university/upi-sumedang.jpg
+    - assets/university/upi-tasikmalaya.jpg
+    - assets/university/upi-purwakarta.jpg
+    - assets/university/upi-serang.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

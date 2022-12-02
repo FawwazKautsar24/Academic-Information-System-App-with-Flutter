@@ -34,6 +34,46 @@ class _HomePageState extends State<HomePage> {
                     //     ),
                     //   ),
                     // ),
+                    // SizedBox(
+                    //   width: 350,
+                    //   child: InkWell(
+                    //     splashColor: Colors.blue.withAlpha(30),
+                    //     onTap: () {
+                    //       // Navigator.push(
+                    //       //   context,
+                    //       //   MaterialPageRoute(builder: (context) => Dosen()),
+                    //       // );
+                    //     },
+                    //     child: Card(
+                    //       margin: EdgeInsets.only(top: 30),
+                    //       semanticContainer: true,
+                    //       clipBehavior: Clip.antiAliasWithSaveLayer,
+                    //       child: Column(
+                    //         children: [
+                    //           Image.asset(
+                    //             'university/upi-bumsil.jpg',
+                    //             fit: BoxFit.cover,
+                    //           ),
+                    //           ListTile(
+                    //             title: const Text('UPI Bumi Siliwangi Bandung', textAlign: TextAlign.center),
+                    //             subtitle: Text(
+                    //               'Jl. Dr Setiabudhi No 229',
+                    //               textAlign: TextAlign.center,
+                    //               style: TextStyle(
+                    //                 color: Colors.black.withOpacity(0.6),
+                    //               ),
+                    //             ),
+                    //             // leading: const Icon(Icons.supervisor_account_outlined),
+                    //           ),
+                    //         ],
+                    //       ),
+                    //       shape: RoundedRectangleBorder(
+                    //         borderRadius: BorderRadius.circular(10.0),
+                    //       ),
+                    //       elevation: 10,
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ],
