@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_shopping_mall_app_with_flutter/main_pages/account/account_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/bottom_navigation.dart';
 import 'package:simple_shopping_mall_app_with_flutter/register_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -127,7 +127,7 @@ class _LoginPageState extends State<LoginPage> {
                     });
                     if(_validateIsNull == false){
                       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-                        return AccountPage();
+                        return BottomNavigation();
                       },));
                     }
                   },

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_shopping_mall_app_with_flutter/main_pages/account/account_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/bottom_navigation.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -16,7 +16,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   policyIsAgree(){
     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
-      return AccountPage();
+      return BottomNavigation();
     },));
   }
 
