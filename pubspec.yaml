@@ -66,6 +66,9 @@ flutter:
   assets: 
     - assets/no-profile.png
     - assets/logo-upi.png
+    - assets/main/student.jpeg
+    - assets/main/alumni.jpg
+    - assets/main/lecture.jpg
     - assets/university/upi-bumsil.jpg
     - assets/university/upi-cibiru.jpg
     - assets/university/upi-sumedang.jpg

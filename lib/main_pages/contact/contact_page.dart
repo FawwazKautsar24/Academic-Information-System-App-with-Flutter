@@ -21,7 +21,6 @@ class _ContactPageState extends State<ContactPage> {
         body: ListView(
           children: <Widget>[
             Column(
-              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
