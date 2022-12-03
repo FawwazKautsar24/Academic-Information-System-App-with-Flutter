@@ -117,6 +117,9 @@ class _ContactPageState extends State<ContactPage> {
                     ),
                   ],
                 ),
+                const Padding(
+                  padding: EdgeInsets.only(bottom: 30),
+                ),
               ],
             )
           ],
