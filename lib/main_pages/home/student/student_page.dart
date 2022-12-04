@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/student_upi_page.dart';
 import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/student_fpmipa_page.dart';
 import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/student_depilkom_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/student_kemakom_page.dart';
 
 class StudentPage extends StatefulWidget {
   const StudentPage({super.key});
@@ -109,6 +110,22 @@ class _StudentPageState extends State<StudentPage> {
                       );
                     },
                     child: BuildCardWidget3('Data Mahasiswa Depilkom', 'Jumlah Mahasiswa Aktif \nAngkatan 2019 - 2022'),
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(5),
+                ),
+                SizedBox(
+                  width: 350,
+                  child: InkWell(
+                    splashColor: Colors.blue.withAlpha(30),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => StudentKemakomPage()),
+                      );
+                    },
+                    child: BuildCardWidget3('Profile Mahasiswa Kemakom', 'Data Profile Mahasiswa Aktif \nAngkatan 2019 - 2022'),
                   ),
                 ),
               ]

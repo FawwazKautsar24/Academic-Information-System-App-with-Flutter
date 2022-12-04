@@ -66,6 +66,7 @@ flutter:
   assets: 
     - assets/no-profile.png
     - assets/logo-upi.png
+    - assets/logo-kemakom.png
     - assets/main/student.jpeg
     - assets/main/alumni.jpg
     - assets/main/lecture.jpg
@@ -75,6 +76,13 @@ flutter:
     - assets/university/upi-tasikmalaya.jpg
     - assets/university/upi-purwakarta.jpg
     - assets/university/upi-serang.jpg
+    - assets/force-logo/angkatan15.jpg
+    - assets/force-logo/angkatan16.jpg
+    - assets/force-logo/angkatan17.jpg
+    - assets/force-logo/angkatan18.jpg
+    - assets/force-logo/angkatan19.jpg
+    - assets/force-logo/angkatan20.jpg
+    - assets/force-logo/angkatan21.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
