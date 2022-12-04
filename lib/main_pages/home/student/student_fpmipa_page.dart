@@ -2,24 +2,24 @@ import 'package:flutter/material.dart';
 
 /*
   Data Source : 
-  https://bandungkota.bps.go.id/statictable/2021/03/23/1454/populasi-mahasiswa-di-universitas-pendidikan-indonesia-bandung-menurut-program-studi-2020.html
+  https://pddikti.kemdikbud.go.id/data_pt/QkNGNjNCMDctRTcwMi00OTA3LTk2MjEtMjFERDdBRUY3NEI0
 */
 
-class StudentUPIPage extends StatefulWidget {
-  const StudentUPIPage({super.key});
+class StudentFPMIPAPage extends StatefulWidget {
+  const StudentFPMIPAPage({super.key});
 
   @override
-  State<StudentUPIPage> createState() => _StudentUPIPageState();
+  State<StudentFPMIPAPage> createState() => _StudentFPMIPAPageState();
 }
 
-class _StudentUPIPageState extends State<StudentUPIPage> {
+class _StudentFPMIPAPageState extends State<StudentFPMIPAPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Student UPI Page',
+      title: 'Student FPMIPA Page',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Data Mahasiswa UPI'),
+          title: Text('Data Mahasiswa FPMIPA'),
           backgroundColor: Colors.red.shade900,
         ),
         body: ListView(
@@ -42,7 +42,7 @@ class _StudentUPIPageState extends State<StudentUPIPage> {
                             Padding(
                               padding: EdgeInsets.all(2),
                               child: Text(
-                                'Jumlah Mahasiswa\nUniversitas Pendidikan Indonesia',
+                                'Jumlah Mahasiswa\nFakultas Pendidikan Matematika\ndan Ilmu Pengetahuan Alam',
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     fontSize: 16,
@@ -54,7 +54,7 @@ class _StudentUPIPageState extends State<StudentUPIPage> {
                               padding: EdgeInsets.all(5), 
                             ),
                             Text(
-                              '41.912',
+                              '1.553',
                               style: TextStyle(
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold,
@@ -104,25 +104,20 @@ class _StudentUPIPageState extends State<StudentUPIPage> {
                             ),
                             DataTable(
                               columns: [
-                                BuildDataColumnWidget('Fakultas'),
-                                BuildDataColumnWidget('S1'),
-                                BuildDataColumnWidget('S2'),
-                                BuildDataColumnWidget('S3'),
-                                BuildDataColumnWidget('Profesi'),
+                                BuildDataColumnWidget('Prodi'),
+                                BuildDataColumnWidget('2019'),
+                                BuildDataColumnWidget('2020'),
+                                BuildDataColumnWidget('2021'),
+                                BuildDataColumnWidget('2022'),
                               ], 
                               rows: [
-                                BuildDataRowWidget('FIP', '3.234', '204', '103', '-'),
-                                BuildDataRowWidget('FPBS', '3.162', '274', '62', '-'),
-                                BuildDataRowWidget('FPEB', '1.750', '-', '-', '-'),
-                                BuildDataRowWidget('FPIPS', '2.927', '233', '76', '-'),
-                                BuildDataRowWidget('FPMIPA', '2.025', '538', '157', '-'),
-                                BuildDataRowWidget('FPOK', '1.885', '-', '-', '-'),
-                                BuildDataRowWidget('FPTK', '2.915', '-', '-', '-'),
-                                BuildDataRowWidget('Kampus Daerah', '6.288', '52', '-', '-'),
-                                BuildDataRowWidget('SPs', '-', '1.592', '724', '2.024'),
-                                BuildDataRowWidget('FPSD', '1.402', '-', '-', '-'),
-                                BuildDataRowTotalWidget('Total', '25.588', '2.893', '1.122', '2.024'),
-                              ],
+                                BuildDataRowWidget('Pendidikan Matematika', '48', '48', '49', '50'),//195
+                                BuildDataRowWidget('Pendidikan Fisika', '41', '43', '43', '42'),//169
+                                BuildDataRowWidget('Pendidikan Biologi', '36', '39', '38', '41'),//154
+                                BuildDataRowWidget('Pendidikan Kimia', '44', '46', '48', '49'),//187
+                                BuildDataRowWidget('Pendidikan Ilmu Komputer', '37', '38', '38', '40'),//153
+                                BuildDataRowWidget('Pendidikan Ilmu Pengetahuan Alam', '9', '9', '10', '10'),//38
+                              ],//898
                             )
                           ]
                         )
@@ -165,25 +160,19 @@ class _StudentUPIPageState extends State<StudentUPIPage> {
                             ),
                             DataTable(
                               columns: [
-                                BuildDataColumnWidget('Fakultas'),
-                                BuildDataColumnWidget('D3'),
-                                BuildDataColumnWidget('S1'),
-                                BuildDataColumnWidget('S2'),
-                                BuildDataColumnWidget('S3'),
+                                BuildDataColumnWidget('Prodi'),
+                                BuildDataColumnWidget('2019'),
+                                BuildDataColumnWidget('2020'),
+                                BuildDataColumnWidget('2021'),
+                                BuildDataColumnWidget('2022'),
                               ], 
                               rows: [
-                                BuildDataRowWidget('FIP', '-', '505', '-', '-'),
-                                BuildDataRowWidget('FPBS', '-', '678', '-', '-'),
-                                BuildDataRowWidget('FPEB', '-', '1.252', '-', '-'),
-                                BuildDataRowWidget('FPIPS', '246', '1.997', '-', '-'),
-                                BuildDataRowWidget('FPMIPA', '-', '1.111', '3', '-'),
-                                BuildDataRowWidget('FPOK', '169', '635', '-', '-'),
-                                BuildDataRowWidget('FPTK', '74', '1.175', '7', '-'),
-                                BuildDataRowWidget('Kampus Daerah', '393', '52', '-', '-'),
-                                BuildDataRowWidget('SPs', '-', '-', '176', '296'),
-                                BuildDataRowWidget('FPSD', '-', '550', '-', '-'),
-                                BuildDataRowTotalWidget('Total', '882', '9.921', '186', '293'),
-                              ],
+                                BuildDataRowWidget('Matematika', '42', '41', '43', '44'),//170
+                                BuildDataRowWidget('Fisika', '16', '18', '18', '20'),//72
+                                BuildDataRowWidget('Biologi', '20', '19', '21', '22'),//82
+                                BuildDataRowWidget('Kimia', '44', '46', '46', '48'),//184
+                                BuildDataRowWidget('Ilmu Komputer', '36', '37', '38', '38'),//149
+                              ],//657
                             )
                           ]
                         )
@@ -205,26 +194,14 @@ class _StudentUPIPageState extends State<StudentUPIPage> {
     );
   }
 
-  DataRow BuildDataRowWidget(String _faculty, String _valS1, String _valS2, String _valS3, String _valProf){
+  DataRow BuildDataRowWidget(String _major, String _val2019, String _val2020, String _val2021, String _val2022){
     return DataRow(
       cells: [
-        DataCell(Text(_faculty)),
-        DataCell(Text(_valS1)),
-        DataCell(Text(_valS2)),
-        DataCell(Text(_valS3)),
-        DataCell(Text(_valProf)),
-      ]
-    );
-  }
-
-  DataRow BuildDataRowTotalWidget(String _faculty, String _valS1, String _valS2, String _valS3, String _valProf){
-    return DataRow(
-      cells: [
-        DataCell(Text(_faculty, style: TextStyle(fontWeight: FontWeight.bold))),
-        DataCell(Text(_valS1, style: TextStyle(fontWeight: FontWeight.bold))),
-        DataCell(Text(_valS2, style: TextStyle(fontWeight: FontWeight.bold))),
-        DataCell(Text(_valS3, style: TextStyle(fontWeight: FontWeight.bold))),
-        DataCell(Text(_valProf, style: TextStyle(fontWeight: FontWeight.bold))),
+        DataCell(Text(_major)),
+        DataCell(Text(_val2019)),
+        DataCell(Text(_val2020)),
+        DataCell(Text(_val2021)),
+        DataCell(Text(_val2022)),
       ]
     );
   }
