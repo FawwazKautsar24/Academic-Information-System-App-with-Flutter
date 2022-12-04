@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/student_upi_page.dart';
 
 class StudentPage extends StatefulWidget {
   const StudentPage({super.key});
@@ -67,7 +68,12 @@ class _StudentPageState extends State<StudentPage> {
                   width: 350,
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => StudentUPIPage()),
+                      );
+                    },
                     child: BuildCardWidget3('Data Mahasiswa UPI', 'Jumlah Mahasiswa Aktif \nSemester Ganjil Tahun 2022'),
                   ),
                 ),
