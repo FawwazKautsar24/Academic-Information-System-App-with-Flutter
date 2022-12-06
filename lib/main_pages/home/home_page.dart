@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/student_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/alumni/alumni_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -48,7 +49,12 @@ class _HomePageState extends State<HomePage> {
                       width: 350,
                       child: InkWell(
                         splashColor: Colors.blue.withAlpha(30),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AlumniPage()),
+                          );
+                        },
                         child: BuildCardWidget2('main/alumni.jpg', 'Data Alumni', 'Penelitian, Pengabdian, dan Pengajaran', Icons.school_outlined),
                       ),
                     ),
