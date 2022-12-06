@@ -66,6 +66,7 @@ flutter:
   assets: 
     - assets/no-profile.png
     - assets/logo-upi.png
+    - assets/logo-fpmipa.png
     - assets/logo-kemakom.png
     - assets/main/student.jpeg
     - assets/main/alumni.jpg
