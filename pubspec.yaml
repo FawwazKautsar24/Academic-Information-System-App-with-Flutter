@@ -84,6 +84,9 @@ flutter:
     - assets/force-logo/angkatan19.jpg
     - assets/force-logo/angkatan20.jpg
     - assets/force-logo/angkatan21.jpg
+    - assets/force-logo/family-2019/1900001.jpg
+    - assets/force-logo/family-2019/1900002.jpg
+    - assets/force-logo/family-2019/1900003.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/family_2019/student_kemakom2019_page.dart';
+// import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/student_page.dart';
 
-class StudentKemakomPage extends StatefulWidget {
-  const StudentKemakomPage({super.key});
+class StudentKemakom2019Page extends StatefulWidget {
+  const StudentKemakom2019Page({super.key});
 
   @override
-  State<StudentKemakomPage> createState() => _StudentKemakomPageState();
+  State<StudentKemakom2019Page> createState() => _StudentKemakom2019PageState();
 }
 
-class _StudentKemakomPageState extends State<StudentKemakomPage> {
+class _StudentKemakom2019PageState extends State<StudentKemakom2019Page> {
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Force Kemakom Page',
+      title: 'Force 2019 Page',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Profile Angkatan Kemakom'),
+          title: Text('Profile Angkatan 2019'),
           backgroundColor: Colors.red.shade900,
         ),
         body: ListView(
@@ -25,7 +25,7 @@ class _StudentKemakomPageState extends State<StudentKemakomPage> {
             Column(
               children: <Widget>[
                 Image.asset(
-                  "logo-kemakom.png",
+                  "force-logo/angkatan19.jpg",
                   height: 60,
                   width: 60,
                 ),
@@ -42,8 +42,13 @@ class _StudentKemakomPageState extends State<StudentKemakomPage> {
                               padding: EdgeInsets.all(2),
                               child: ListTile(
                                 title: Text(
-                                  'Keluarga Mahasiswa Komputer',
+                                  'F19THER',
                                   textAlign: TextAlign.center,
+                                ),
+                                subtitle: Text(
+                                  'Keluarga Angkatan 2019',
+                                  style:
+                                      TextStyle(color: Colors.black.withOpacity(0.6)),
                                 ),
                               ),
                             ),
@@ -63,13 +68,8 @@ class _StudentKemakomPageState extends State<StudentKemakomPage> {
                       width: 200,
                       child: InkWell(
                         splashColor: Colors.blue.withAlpha(30),
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => StudentKemakom2019Page()),
-                          );
-                        },
-                        child: BuildCardWidget('force-logo/angkatan19.jpg', 'F19THER', 'Keluarga Angkatan 2019'),
+                        onTap: () {},
+                        child: BuildCardWidget('force-logo/family-2019/1900001.jpg', 'Amar Musaddad', '1908027\nSee Email & LinkedIn >>'),
                       ),
                     ),
                   ],
@@ -82,7 +82,7 @@ class _StudentKemakomPageState extends State<StudentKemakomPage> {
                       child: InkWell(
                         splashColor: Colors.blue.withAlpha(30),
                         onTap: () {},
-                        child: BuildCardWidget('force-logo/angkatan20.jpg', 'ST20NG', 'Keluarga Angkatan 2020'),
+                        child: BuildCardWidget('force-logo/family-2019/1900002.jpg', 'Basuki Rahmat', '1901092\nSee Email & LinkedIn >>'),
                       ),
                     ),
                   ],
@@ -95,7 +95,7 @@ class _StudentKemakomPageState extends State<StudentKemakomPage> {
                       child: InkWell(
                         splashColor: Colors.blue.withAlpha(30),
                         onTap: () {},
-                        child: BuildCardWidget('force-logo/angkatan21.jpg', 'A21SE', 'Keluarga Angkatan 2021'),
+                        child: BuildCardWidget('force-logo/family-2019/1900003.jpeg', 'Fawwaz Kautsar', '1907912\nSee Email & LinkedIn >>'),
                       ),
                     ),
                   ],
