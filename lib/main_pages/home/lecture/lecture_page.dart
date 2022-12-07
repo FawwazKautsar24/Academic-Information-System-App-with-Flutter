@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/lecture/lecture_upi_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/lecture/lecture_fpmipa_page.dart';
 
 class LecturePage extends StatefulWidget {
   const LecturePage({super.key});
@@ -84,7 +85,12 @@ class _LecturePageState extends State<LecturePage> {
                   width: 350,
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LectureFPMIPAPage()),
+                      );
+                    },
                     child: BuildCardWidget3('Data Dosen FPMIPA', 'Jumlah Dosen & Asisten Dosen'),
                   ),
                 ),
