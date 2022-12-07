@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/lecture/lecture_upi_page.dart';
 
 class LecturePage extends StatefulWidget {
   const LecturePage({super.key});
@@ -44,7 +45,7 @@ class _LecturePageState extends State<LecturePage> {
                                     textAlign: TextAlign.center,
                                   ),
                                 subtitle: Text(
-                                  '700++',
+                                  '1.114',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontSize: 16,
@@ -67,7 +68,12 @@ class _LecturePageState extends State<LecturePage> {
                   width: 350,
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LectureUPIPage()),
+                      );
+                    },
                     child: BuildCardWidget3('Data Dosen UPI', 'Jumlah Dosen & Asisten Dosen'),
                   ),
                 ),
