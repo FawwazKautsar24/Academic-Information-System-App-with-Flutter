@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/alumni/alumni_upi_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/alumni/alumni_fpmipa_page.dart';
 
 class AlumniPage extends StatefulWidget {
   const AlumniPage({super.key});
@@ -84,7 +85,12 @@ class _AlumniPageState extends State<AlumniPage> {
                   width: 350,
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AlumniFPMIPAPage()),
+                      );
+                    },
                     child: BuildCardWidget3('Data Alumni FPMIPA', 'Jumlah Alumni Hingga Saat Ini'),
                   ),
                 ),
