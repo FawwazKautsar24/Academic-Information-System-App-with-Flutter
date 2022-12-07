@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/family_2019/student_kemakom2019_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/student/student_family/student_kemakom2019_page.dart';
 
 class StudentKemakomPage extends StatefulWidget {
   const StudentKemakomPage({super.key});

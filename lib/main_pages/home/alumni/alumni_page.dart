@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/alumni/alumni_upi_page.dart';
 
 class AlumniPage extends StatefulWidget {
   const AlumniPage({super.key});
@@ -44,7 +45,7 @@ class _AlumniPageState extends State<AlumniPage> {
                                     textAlign: TextAlign.center,
                                   ),
                                 subtitle: Text(
-                                  '500k++',
+                                  '1,5m++',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontSize: 16,
@@ -67,8 +68,13 @@ class _AlumniPageState extends State<AlumniPage> {
                   width: 350,
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
-                    onTap: () {},
-                    child: BuildCardWidget3('Data Alumni UPI', 'Jumlah Alumni'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AlumniUPIPage()),
+                      );
+                    },
+                    child: BuildCardWidget3('Data Alumni UPI', 'Jumlah Alumni Hingga Saat Ini'),
                   ),
                 ),
                 const Padding(
@@ -79,7 +85,7 @@ class _AlumniPageState extends State<AlumniPage> {
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
                     onTap: () {},
-                    child: BuildCardWidget3('Data Alumni FPMIPA', 'Jumlah Alumni'),
+                    child: BuildCardWidget3('Data Alumni FPMIPA', 'Jumlah Alumni Hingga Saat Ini'),
                   ),
                 ),
                 const Padding(
