@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:simple_shopping_mall_app_with_flutter/main_pages/home/alumni/alumni_family/alumni_kemakom2015_page.dart';
 
-class AlumniKemakomPage extends StatefulWidget {
-  const AlumniKemakomPage({super.key});
+class StudentKemakom2015Page extends StatefulWidget {
+  const StudentKemakom2015Page({super.key});
 
   @override
-  State<AlumniKemakomPage> createState() => _AlumniKemakomPageState();
+  State<StudentKemakom2015Page> createState() => _StudentKemakom2015PageState();
 }
 
-class _AlumniKemakomPageState extends State<AlumniKemakomPage> {
+class _StudentKemakom2015PageState extends State<StudentKemakom2015Page> {
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Force Kemakom Page',
+      title: 'Force 2015 Page',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Profile Angkatan Kemakom'),
+          title: Text('Profile Angkatan 2015'),
           backgroundColor: Colors.red.shade900,
         ),
         body: ListView(
@@ -25,7 +24,7 @@ class _AlumniKemakomPageState extends State<AlumniKemakomPage> {
             Column(
               children: <Widget>[
                 Image.asset(
-                  "logo-kemakom.png",
+                  "force-logo/angkatan15.jpg",
                   height: 60,
                   width: 60,
                 ),
@@ -42,8 +41,13 @@ class _AlumniKemakomPageState extends State<AlumniKemakomPage> {
                               padding: EdgeInsets.all(2),
                               child: ListTile(
                                 title: Text(
-                                  'Keluarga Mahasiswa Komputer',
+                                  'OMICRON',
                                   textAlign: TextAlign.center,
+                                ),
+                                subtitle: Text(
+                                  'Keluarga Angkatan 2015',
+                                  style:
+                                      TextStyle(color: Colors.black.withOpacity(0.6)),
                                 ),
                               ),
                             ),
@@ -63,13 +67,8 @@ class _AlumniKemakomPageState extends State<AlumniKemakomPage> {
                       width: 200,
                       child: InkWell(
                         splashColor: Colors.blue.withAlpha(30),
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => StudentKemakom2015Page()),
-                          );
-                        },
-                        child: BuildCardWidget('force-logo/angkatan15.jpg', 'OMICRON', 'Keluarga Angkatan 2015'),
+                        onTap: () {},
+                        child: BuildCardWidget('force-logo/family-2015/1900001.jpg', 'Ryan Firdaus', '1500001\nSee Email & LinkedIn >>'),
                       ),
                     ),
                   ],
@@ -82,7 +81,7 @@ class _AlumniKemakomPageState extends State<AlumniKemakomPage> {
                       child: InkWell(
                         splashColor: Colors.blue.withAlpha(30),
                         onTap: () {},
-                        child: BuildCardWidget('force-logo/angkatan16.jpg', 'BINARY', 'Keluarga Angkatan 2016'),
+                        child: BuildCardWidget('force-logo/family-2015/1900002.jpg', 'Rahmat Syaidul', '1500002\nSee Email & LinkedIn >>'),
                       ),
                     ),
                   ],
@@ -95,20 +94,7 @@ class _AlumniKemakomPageState extends State<AlumniKemakomPage> {
                       child: InkWell(
                         splashColor: Colors.blue.withAlpha(30),
                         onTap: () {},
-                        child: BuildCardWidget('force-logo/angkatan17.jpg', 'UNITY', 'Keluarga Angkatan 2017'),
-                      ),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    SizedBox(
-                      width: 200,
-                      child: InkWell(
-                        splashColor: Colors.blue.withAlpha(30),
-                        onTap: () {},
-                        child: BuildCardWidget('force-logo/angkatan18.jpg', 'SPARK', 'Keluarga Angkatan 2018'),
+                        child: BuildCardWidget('force-logo/family-2015/1900003.jpeg', 'Ridwan Utama', '1500003\nSee Email & LinkedIn >>'),
                       ),
                     ),
                   ],
