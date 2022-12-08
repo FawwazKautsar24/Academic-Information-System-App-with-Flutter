@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_shopping_mall_app_with_flutter/main_pages/contact/contact_bumsil_page.dart';
 
 class ContactPage extends StatefulWidget {
   const ContactPage({super.key});
@@ -30,10 +31,10 @@ class _ContactPageState extends State<ContactPage> {
                       child: InkWell(
                         splashColor: Colors.blue.withAlpha(30),
                         onTap: () {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(builder: (context) => Dosen()),
-                          // );
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => ContactBumsilPage()),
+                          );
                         },
                         child: BuildCardWidget(
                           'university/upi-bumsil.jpg', 'UPI Bumi Siliwangi Bandung', 'Jl. Dr Setiabudhi No 229'

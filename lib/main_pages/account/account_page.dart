@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simple_shopping_mall_app_with_flutter/main_pages/account/account_editProfile_page.dart';
+import 'package:simple_shopping_mall_app_with_flutter/login_page.dart';
 
 class AccountPage extends StatefulWidget {
   const AccountPage({super.key});
@@ -193,36 +194,45 @@ class _AccountPageState extends State<AccountPage> {
               Container(
                 margin: EdgeInsets.only(top: 50),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
-                  Spacer(flex: 3,),
-                  Container(
-                    width: 10,
-                    child: Icon(
-                      Icons.exit_to_app, 
-                      size: 28
+              GestureDetector(
+                onTap: () {
+                  // back to the login page
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => LoginPage()),
+                  );
+                },
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    Spacer(flex: 3,),
+                    Container(
+                      width: 10,
+                      child: Icon(
+                        Icons.exit_to_app, 
+                        size: 28
+                      ),
                     ),
-                  ),
-                  Spacer(flex: 2,),
-                  Container(
-                    width: 150,
-                    child: Text('Keluar', 
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold
+                    Spacer(flex: 2,),
+                    Container(
+                      width: 150,
+                      child: Text('Keluar', 
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold
+                        )
                       )
-                    )
-                  ),
-                  Spacer(flex: 5,),
-                  Container(
-                    child: Icon(
-                      Icons.chevron_right, 
-                      size: 28
                     ),
-                  ),
-                  Spacer(flex: 3,),
-                ],
+                    Spacer(flex: 5,),
+                    Container(
+                      child: Icon(
+                        Icons.chevron_right, 
+                        size: 28
+                      ),
+                    ),
+                    Spacer(flex: 3,),
+                  ],
+                ),
               ),
             ],
           ),
